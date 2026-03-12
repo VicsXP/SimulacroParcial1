@@ -37,6 +37,8 @@ namespace SimulacroParcial1
         }
         private void CargarTalleres()
         {
+            talleres.Clear();
+
             string[] lineas = File.ReadAllLines("talleres.txt");
 
             foreach (string linea in lineas)
@@ -52,20 +54,41 @@ namespace SimulacroParcial1
                 talleres.Add(t);
             }
         }
-        private void Form1_Load(object sender, EventArgs e)
+        private void LlenarComboBoxes()
         {
-            CargarEstudiantes();
-            CargarTalleres();
+            comboBoxEstudiantes.Items.Clear();
+            comboBoxTalleres.Items.Clear();
 
-            foreach (Estudiante e1 in estudiantes)
+            foreach (Estudiante e in estudiantes)
             {
-                comboBoxEstudiantes.Items.Add(e1.Nombre);
+                comboBoxEstudiantes.Items.Add(e.Nombre);
             }
 
             foreach (Taller t in talleres)
             {
                 comboBoxTalleres.Items.Add(t.Nombre);
             }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CargarEstudiantes();
+            CargarTalleres();
+
+            LlenarComboBoxes();
+            MostrarEstudiantes();
+            MostrarTalleres();
+        }
+        private void MostrarEstudiantes()
+        {
+            dataGridViewEstudiantes.DataSource = estudiantes
+                .Select(s => new { s.Nombre })
+                .ToList();
+        }
+        private void MostrarTalleres()
+        {
+            dataGridViewTalleres.DataSource = talleres
+                .Select(t => new { t.Nombre })
+                .ToList();
         }
     }
 }
