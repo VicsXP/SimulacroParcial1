@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridViewEstudiantes = new System.Windows.Forms.DataGridView();
             this.dataGridViewTalleres = new System.Windows.Forms.DataGridView();
+            this.btnInscribir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTalleres)).BeginInit();
             this.SuspendLayout();
@@ -92,11 +93,22 @@
             this.dataGridViewTalleres.Size = new System.Drawing.Size(402, 207);
             this.dataGridViewTalleres.TabIndex = 5;
             // 
+            // btnInscribir
+            // 
+            this.btnInscribir.Location = new System.Drawing.Point(15, 107);
+            this.btnInscribir.Name = "btnInscribir";
+            this.btnInscribir.Size = new System.Drawing.Size(75, 23);
+            this.btnInscribir.TabIndex = 6;
+            this.btnInscribir.Text = "Inscribir";
+            this.btnInscribir.UseVisualStyleBackColor = true;
+            this.btnInscribir.Click += new System.EventHandler(this.btnInscribir_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInscribir);
             this.Controls.Add(this.dataGridViewTalleres);
             this.Controls.Add(this.dataGridViewEstudiantes);
             this.Controls.Add(this.label2);
@@ -121,6 +133,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridViewEstudiantes;
         private System.Windows.Forms.DataGridView dataGridViewTalleres;
+        private System.Windows.Forms.Button btnInscribir;
     }
 }
 

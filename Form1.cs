@@ -90,5 +90,24 @@ namespace SimulacroParcial1
                 .Select(t => new { t.Nombre })
                 .ToList();
         }
+
+        private void btnInscribir_Click(object sender, EventArgs e)
+        {
+            if (comboBoxEstudiantes.SelectedIndex == -1 || comboBoxTalleres.SelectedIndex == -1)
+            {
+                MessageBox.Show("Seleccione un estudiante y un taller.");
+                return;
+            }
+
+            Estudiante est = estudiantes[comboBoxEstudiantes.SelectedIndex];
+            Taller tal = talleres[comboBoxTalleres.SelectedIndex];
+
+            Inscripcion nueva = new Inscripcion(est.DPI, tal.Codigo, DateTime.Today);
+
+            inscripciones.Add(nueva);
+
+            MessageBox.Show("Inscripción realizada correctamente.");
+        }
+    }
     }
 }
