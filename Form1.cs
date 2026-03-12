@@ -108,6 +108,19 @@ namespace SimulacroParcial1
 
             MessageBox.Show("Inscripción realizada correctamente.");
         }
-    }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            var reporte = inscripciones
+                .Select(i => new
+                {
+                    Estudiante = estudiantes.First(est => est.DPI == i.DPI).Nombre,
+                    Taller = talleres.First(tal => tal.Codigo == i.CodigoTaller).Nombre,
+                    Fecha = i.Fecha
+                })
+                .ToList();
+
+            dataGridViewInscripciones.DataSource = reporte;
+        }
     }
 }
