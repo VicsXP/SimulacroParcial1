@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulacroParcial1", "SimulacroParcial1.csproj", "{4A6D5249-B36C-4288-92FA-06418CDDEA0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A6D5249-B36C-4288-92FA-06418CDDEA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A6D5249-B36C-4288-92FA-06418CDDEA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A6D5249-B36C-4288-92FA-06418CDDEA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A6D5249-B36C-4288-92FA-06418CDDEA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5257EB89-00D7-429A-86E5-95DB912DDDC1}
+	EndGlobalSection
+EndGlobal
