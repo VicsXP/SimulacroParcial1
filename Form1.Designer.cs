@@ -28,13 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.comboBoxEstudiantes = new System.Windows.Forms.ComboBox();
+            this.comboBoxTalleres = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // comboBoxEstudiantes
+            // 
+            this.comboBoxEstudiantes.FormattingEnabled = true;
+            this.comboBoxEstudiantes.Location = new System.Drawing.Point(91, 18);
+            this.comboBoxEstudiantes.Name = "comboBoxEstudiantes";
+            this.comboBoxEstudiantes.Size = new System.Drawing.Size(275, 24);
+            this.comboBoxEstudiantes.TabIndex = 0;
+            // 
+            // comboBoxTalleres
+            // 
+            this.comboBoxTalleres.FormattingEnabled = true;
+            this.comboBoxTalleres.Location = new System.Drawing.Point(91, 57);
+            this.comboBoxTalleres.Name = "comboBoxTalleres";
+            this.comboBoxTalleres.Size = new System.Drawing.Size(275, 24);
+            this.comboBoxTalleres.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Estudiante:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Taller:";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.comboBoxTalleres);
+            this.Controls.Add(this.comboBoxEstudiantes);
+            this.Name = "Form1";
+            this.Text = "Inscripcion Alumnos a Taller";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox comboBoxEstudiantes;
+        private System.Windows.Forms.ComboBox comboBoxTalleres;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

@@ -1,0 +1,3 @@
+﻿AC1,Programacion,150
+AC3,Electronica,200
+IE7,Robotica,250
