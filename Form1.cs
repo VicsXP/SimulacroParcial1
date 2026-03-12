@@ -120,6 +120,22 @@ namespace SimulacroParcial1
                 })
                 .ToList();
 
+
+            dataGridViewInscripciones.DataSource = reporte;
+        }
+
+        private void btnOrdenar_Click(object sender, EventArgs e)
+        {
+            var reporte = inscripciones
+                .Select(i => new
+                {
+                    Estudiante = estudiantes.First(est => est.DPI == i.DPI).Nombre,
+                    Taller = talleres.First(tal => tal.Codigo == i.CodigoTaller).Nombre,
+                    Fecha = i.Fecha
+                })
+                .OrderBy(r => r.Taller)
+                .ToList();
+
             dataGridViewInscripciones.DataSource = reporte;
         }
     }

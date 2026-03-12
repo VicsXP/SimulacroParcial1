@@ -40,6 +40,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridViewInscripciones = new System.Windows.Forms.DataGridView();
             this.btnReporte = new System.Windows.Forms.Button();
+            this.btnOrdenar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEstudiantes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTalleres)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -141,6 +142,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnOrdenar);
             this.tabPage2.Controls.Add(this.btnReporte);
             this.tabPage2.Controls.Add(this.dataGridViewInscripciones);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
@@ -163,13 +165,23 @@
             // 
             // btnReporte
             // 
-            this.btnReporte.Location = new System.Drawing.Point(355, 328);
+            this.btnReporte.Location = new System.Drawing.Point(343, 331);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Size = new System.Drawing.Size(75, 23);
             this.btnReporte.TabIndex = 7;
             this.btnReporte.Text = "Reporte";
             this.btnReporte.UseVisualStyleBackColor = true;
             this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
+            // btnOrdenar
+            // 
+            this.btnOrdenar.Location = new System.Drawing.Point(444, 331);
+            this.btnOrdenar.Name = "btnOrdenar";
+            this.btnOrdenar.Size = new System.Drawing.Size(75, 23);
+            this.btnOrdenar.TabIndex = 8;
+            this.btnOrdenar.Text = "Ordenar";
+            this.btnOrdenar.UseVisualStyleBackColor = true;
+            this.btnOrdenar.Click += new System.EventHandler(this.btnOrdenar_Click);
             // 
             // Form1
             // 
@@ -205,6 +217,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataGridViewInscripciones;
         private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.Button btnOrdenar;
     }
 }
 
